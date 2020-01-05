@@ -25,6 +25,8 @@ require './lib/auth_util'
 
 module NycTourBackend
   class Application < Rails::Application
+    config.autoload_paths += %W(#{config.root}/app/services)
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
