@@ -1,5 +1,8 @@
 # NYC Tour Backend
 
+![nycTourApp](https://nyc-tour-app.s3.us-east-2.amazonaws.com/pigeon.gif)
+
+## backend todos
 - [X] active admin
   - https://blog.heroku.com/a-rock-solid-modern-web-stack
 - [X] jwt auth
