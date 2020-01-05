@@ -1,0 +1,57 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Rails server",
+      "type": "Ruby",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "useBundler": true,
+      "pathToBundler": "/Users/loaner/.rvm/gems/ruby-2.6.2/bin/bundle",
+      "pathToRDebugIDE": "/Users/loaner/code/nyc_tour_backend/vendor/bundle/ruby/2.6.2/gems/ruby-debug-ide-0.7.0",
+      "program": "${workspaceRoot}/bin/rails",
+      "env": {
+        "PATH": "/Users/loaner/.rvm/gems/ruby-2.6.2/bin:/Users/loaner/.rvm/gems/ruby-2.6.2@global/bin:/Users/loaner/.rvm/rubies/ruby-2.6.2/bin:/Users/loaner/.rvm/bin:/usr/local/opt/openssl/bin:/Users/loaner/.pyenv/shims:/Users/loaner/.pyenv/bin:/usr/local/bin:/Users/loaner/bin:/usr/local/bin:/usr/local/share/npm/bin:/usr/local/share/python:/Users/loaner/.nvm/versions/node/v8.9.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/loaner/scripts:/Applications/Postgres.app/Contents/Versions/latest/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/jeff/.node/bin:/Users/jeff/.node/bin",
+        "rvm_prefix": "/Users/loaner",
+        "rvm_path": "/Users/loaner/.rvm",
+        "rvm_bin_path": "/Users/loaner/.rvm/bin",
+        "GEM_HOME": "/Users/loaner/.rvm/gems/ruby-2.6.2",
+        "GEM_PATH": "/Users/loaner/.rvm/gems/ruby-2.6.2:/Users/loaner/.rvm/gems/ruby-2.6.2@global",
+        "MY_RUBY_HOME": "/Users/loaner/.rvm/rubies/ruby-2.6.2",
+        "IRBRC": "/Users/loaner/.rvm/rubies/ruby-2.6.2/.irbrc",
+        "RUBY_VERSION": "ruby-2.6.2"
+     },
+      "args": [
+          "server",
+          "-p",
+          "3000"
+      ]
+  },
+    {
+			"name": "Listen for rdebug-ide",
+			"type": "Ruby",
+			"request": "attach",
+			"cwd": "${workspaceRoot}",
+			"remoteHost": "127.0.0.1",
+			"remotePort": "1234",
+      "remoteWorkspaceRoot": "${workspaceRoot}",
+      "preLaunchTask": "start-debug"
+		},
+    {
+      "name": "Debug Rails console",
+      "type": "Ruby",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "useBundler": true,
+      "pathToBundler": "/usr/local/bin/bundle",
+      "pathToRDebugIDE": "/Users/loaner/code/nyc_tour_backend/vendor/bundle/ruby/2.3.0/gems/ruby-debug-ide-0.7.0/bin/rdebug-ide",
+      "program": "${workspaceRoot}/bin/rails",
+      "args": [
+          "console"
+      ]
+    },
+  ]
+}
