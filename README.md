@@ -3,11 +3,11 @@
 ![nycTourApp](https://nyc-tour-app.s3.us-east-2.amazonaws.com/pigeon.gif)
 
 ## First time setup
-- Install ruby version specified (here)[https://github.com/jeffthemaximum/nyc_tour_backend/blob/master/.ruby-version].
-  - We recommend using (rvm)[https://rvm.io/] to manage ruby versions.
+- Install ruby version specified [here](https://github.com/jeffthemaximum/nyc_tour_backend/blob/master/.ruby-version).
+  - We recommend using [rvm](https://rvm.io/) to manage ruby versions.
 - Install postgres.
-  - We recommend using (postgres.app)[https://postgresapp.com/] on mac.
-- Install (bundler)[https://bundler.io/].
+  - We recommend using [postgres.app](https://postgresapp.com/) on mac.
+- Install [bundler](https://bundler.io/).
 - Install dependencies. In root of repo, run:
 ```
 bundle install
@@ -27,7 +27,7 @@ bundle exec rails s
 
 ## More details
 - There's two main pieces of functionality: **1) All the API endpoints** and **2) An admin website**.
-- The API endpoints exist in (here)[https://github.com/jeffthemaximum/nyc_tour_backend/tree/master/app/controllers/api/v1].
+- The API endpoints exist in [here](https://github.com/jeffthemaximum/nyc_tour_backend/tree/master/app/controllers/api/v1).
   - Right now, the only functional one is POST `api/v1/users`
   - You can create a new user with
   ```
@@ -38,7 +38,7 @@ bundle exec rails s
   }
   ```
 - The admin website is available at http://localhost:3000/admin
-  - You can login locally with the user created (here)[https://github.com/jeffthemaximum/nyc_tour_backend/blob/master/db/seeds.rb].
+  - You can login locally with the user created [here](https://github.com/jeffthemaximum/nyc_tour_backend/blob/master/db/seeds.rb).
 
 ## backend todos
 - [X] active admin
