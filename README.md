@@ -62,5 +62,10 @@ bundle exec rails s
   - [ ] design login
 - code
   - [X] see how expo uses react native navigation
+  - [ ] do swift-level splash screen
+    - (pigeon vertically centered and full-width)
+  - [ ] do app splash screen
+    - (pigeon vertically centered and full-width)
+    - in containers/Splash.tsx
   - [ ] connect signup to backend
   - [ ] connect login to backend
