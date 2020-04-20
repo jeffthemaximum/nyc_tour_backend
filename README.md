@@ -59,7 +59,7 @@ bundle exec rails s
 ## frontend todos
 - design
   - [X] design signup
-  - [ ] design login
+  - [X] design login
 - code
   - [X] see how expo uses react native navigation
   - [ ] do swift-level splash screen
@@ -67,5 +67,5 @@ bundle exec rails s
   - [ ] do app splash screen
     - (pigeon vertically centered and full-width)
     - in containers/Splash.tsx
-  - [ ] connect signup to backend
+  - [X] connect signup to backend
   - [ ] connect login to backend
