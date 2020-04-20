@@ -14,8 +14,7 @@ module Api
       end
 
       def show
-        # TODO
-        head :ok
+        render json: @current_user, serializer: UserSerializer, status: :ok
       end
 
       private
