@@ -68,4 +68,4 @@ bundle exec rails s
     - (pigeon vertically centered and full-width)
     - in containers/Splash.tsx
   - [X] connect signup to backend
-  - [ ] connect login to backend
+  - [X] connect login to backend
