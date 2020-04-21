@@ -1,7 +1,7 @@
 module Api
   module V1
     class UsersController < ApiController
-      skip_before_action :verify_authorized, :only => [:create]
+      skip_before_action :verify_authorized, :only => [:create, :login]
 
       def create
         @user = User.new(user_params)
@@ -11,6 +11,16 @@ module Api
         end
 
         render json: @user, serializer: UserSerializer, status: :ok
+      end
+
+      def login
+        @user = User.find_by(email: user_params[:email].downcase)
+
+        if @user && @user.authenticate(user_params[:password])
+          render json: @user, serializer: UserSerializer, status: :ok
+        else
+          render json: {errors: @user.errors}, status: 422
+        end
       end
 
       def show
